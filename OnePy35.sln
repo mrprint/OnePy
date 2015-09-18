@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2012 for Windows Desktop
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnePy35", "OnePy35.csproj", "{64111159-7C73-4E62-B3D5-B443FB22806A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B6C3F2C7-D8E9-4759-80D6-38D8A52840AC} = {B6C3F2C7-D8E9-4759-80D6-38D8A52840AC}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "onepy35.Enterprise.AddIn", "Enterprise.AddIn\onepy35.Enterprise.AddIn.csproj", "{B6C3F2C7-D8E9-4759-80D6-38D8A52840AC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{64111159-7C73-4E62-B3D5-B443FB22806A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64111159-7C73-4E62-B3D5-B443FB22806A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64111159-7C73-4E62-B3D5-B443FB22806A}.Debug|x86.ActiveCfg = Debug|x86
+		{64111159-7C73-4E62-B3D5-B443FB22806A}.Debug|x86.Build.0 = Debug|x86
+		{64111159-7C73-4E62-B3D5-B443FB22806A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64111159-7C73-4E62-B3D5-B443FB22806A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64111159-7C73-4E62-B3D5-B443FB22806A}.Release|x86.ActiveCfg = Release|x86
+		{64111159-7C73-4E62-B3D5-B443FB22806A}.Release|x86.Build.0 = Release|x86
+		{B6C3F2C7-D8E9-4759-80D6-38D8A52840AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6C3F2C7-D8E9-4759-80D6-38D8A52840AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6C3F2C7-D8E9-4759-80D6-38D8A52840AC}.Debug|x86.ActiveCfg = Debug|x86
+		{B6C3F2C7-D8E9-4759-80D6-38D8A52840AC}.Debug|x86.Build.0 = Debug|x86
+		{B6C3F2C7-D8E9-4759-80D6-38D8A52840AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6C3F2C7-D8E9-4759-80D6-38D8A52840AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6C3F2C7-D8E9-4759-80D6-38D8A52840AC}.Release|x86.ActiveCfg = Release|x86
+		{B6C3F2C7-D8E9-4759-80D6-38D8A52840AC}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
