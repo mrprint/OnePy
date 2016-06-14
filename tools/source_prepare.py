@@ -1,4 +1,4 @@
-# -*- coding: cp1251 -*-
+# -*- coding: UTF-8 -*-
 
 import sys, os, re, gzip
 
@@ -47,9 +47,9 @@ cheetahVarStartToken = $$
         return
     with open(nin) as fin:
         text = fin.read()
-    text = Cheetah.Template.Template(settings + text.decode('cp1251'), searchList=[pvars])
+    text = Cheetah.Template.Template(settings + text.decode('utf-8'), searchList=[pvars])
     with open(nout, 'w+') as fout:
-        fout.write(str(text).decode('utf-8').encode('cp1251'))
+        fout.write(str(text))
     
 def zip(nin, nout):
     if nin == nout:

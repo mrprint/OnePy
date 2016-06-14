@@ -10,7 +10,8 @@
     <ApplicationIcon />
     <AssemblyKeyContainerName />
     <AssemblyName>OnePy45</AssemblyName>
-    <AssemblyOriginatorKeyFile>onepy.pfx</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
     <DefaultClientScript>JScript</DefaultClientScript>
     <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
     <DefaultTargetSchema>IE50</DefaultTargetSchema>
@@ -70,28 +71,28 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>
-    <SignAssembly>true</SignAssembly>
+    <SignAssembly>false</SignAssembly>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="IronPython, Version=2.7.0.40, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
+    <Reference Include="IronPython, Version=2.7.5.0, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>IPython\Net40\IronPython.dll</HintPath>
+      <HintPath>IPython\Net45\IronPython.dll</HintPath>
     </Reference>
-    <Reference Include="IronPython.Modules, Version=2.7.0.40, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
+    <Reference Include="IronPython.Modules, Version=2.7.5.0, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>IPython\Net40\IronPython.Modules.dll</HintPath>
+      <HintPath>IPython\Net45\IronPython.Modules.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Dynamic, Version=1.1.0.20, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>IPython\Net40\Microsoft.Dynamic.dll</HintPath>
+      <HintPath>IPython\Net45\Microsoft.Dynamic.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Scripting, Version=1.1.0.20, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>IPython\Net40\Microsoft.Scripting.dll</HintPath>
+      <HintPath>IPython\Net45\Microsoft.Scripting.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Scripting.Metadata, Version=1.1.0.20, Culture=neutral, PublicKeyToken=7f709c5b713576e1, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>IPython\Net40\Microsoft.Scripting.Metadata.dll</HintPath>
+      <HintPath>IPython\Net45\Microsoft.Scripting.Metadata.dll</HintPath>
     </Reference>
     <Reference Include="op45.Enterprise.AddIn">
       <HintPath>.\op45.Enterprise.AddIn.dll</HintPath>
@@ -125,13 +126,10 @@
     <None Include="App.config">
       <SubType>Designer</SubType>
     </None>
-    <None Include="onepy.pfx" />
-    <None Include="onepy4.pfx" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="connector.py" />
     <Content Include="interfacing.py" />
-    <Content Include="OnePy45.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

@@ -1,4 +1,4 @@
-using System;
+п»їusing System;
 using Enterprise.AddIn;
 
 namespace OnePy
@@ -15,7 +15,7 @@ namespace OnePy
 			set
 			{
 				m_V7Object = value;
-				// Вызываем неявно QueryInterface
+				// Р’С‹Р·С‹РІР°РµРј РЅРµСЏРІРЅРѕ QueryInterface
 				m_ErrorInfo = (IErrorLog)value;
 				m_AsyncEvent = (IAsyncEvent)value;
 				m_StatusLine = (IStatusLine)value;
@@ -88,7 +88,7 @@ namespace OnePy
 
 
 		private static object m_V7Object;
-        //private static object m_obj1C; // устанавливается в конструкторе InteractData
+        //private static object m_obj1C; // СѓСЃС‚Р°РЅР°РІР»РёРІР°РµС‚СЃСЏ РІ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂРµ InteractData
 		private static IErrorLog m_ErrorInfo;
 		private static IAsyncEvent m_AsyncEvent;
 		private static IStatusLine m_StatusLine;

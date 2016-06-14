@@ -26,15 +26,16 @@
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
+    <DefineConstants>TRACE;ONEPY35</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <SignAssembly>true</SignAssembly>
+    <SignAssembly>false</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
-    <AssemblyOriginatorKeyFile>onepy.pfx</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
     <DebugSymbols>true</DebugSymbols>
@@ -110,20 +111,14 @@
     <EmbeddedResource Include="#1" />
     <EmbeddedResource Include="#2" />
     <None Include="App.config" />
-    <None Include="App35.config" />
-    <None Include="compilepy35.bat" />
-    <None Include="onepy.pfx" />
-    <None Include="onepy2.pfx" />
-    <None Include="onepy4.pfx" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="connector.py" />
     <Content Include="interfacing.py" />
-    <Content Include="source_prepare.py" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PreBuildEvent>"$(ProjectDir)tools\compilepy35.bat" "$(ProjectDir)" "$(ConfigurationName)" "$(ProjectName)" "$(PlatformName)" demo</PreBuildEvent>
+    <PreBuildEvent>"$(ProjectDir)tools\compilepy35.bat" "$(ProjectDir)" "$(ConfigurationName)" "$(ProjectName)" "$(PlatformName)"</PreBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

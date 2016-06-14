@@ -1,4 +1,4 @@
-namespace Enterprise.AddIn
+﻿namespace Enterprise.AddIn
 {
     public enum COMError: uint
     {
