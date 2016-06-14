@@ -445,12 +445,12 @@ def P5793C5CF34DB467985C5D4952D538DBE(ent):
 
 # Классы обёрток агрегатных
 
-for id, bcl in [('Reference', ContainerReference),
-                ('ValueTable', ContainerValueTable)]:
-    clname = 'Ent%sProxy' % id
+for id_, bcl in [('Reference', ContainerReference),
+                 ('ValueTable', ContainerValueTable)]:
+    clname = 'Ent%sProxy' % id_
     cl = new.classobj(clname, (EntObjectProxy, bcl), {})
     globals()[clname] = cl
-    ContainerClasses[id.upper()] = cl
+    ContainerClasses[id_.upper()] = cl
     __all__.append(clname)
 
 
